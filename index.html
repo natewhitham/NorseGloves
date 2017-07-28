@@ -1,12 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>My Portfolio</title>
-	<link rel="icon" href="icons/icon-home.png">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css-home/style1.css">
+  <link rel="stylesheet" href="css-home/scrolling-nav.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-<h1>List of projects I have done</h1>
-<a href="NorseGlovesMW/index.html"> View NorseGlovesMW's website</a>	
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">NW</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- First Container -->
+  <section id="intro" class="intro-section">
+    <div class="container-fluid bg-2 text-center">      
+      <p class="name">Nate Whitham</p> 
+      <br><br>
+      <img src="icons/nw_logo.png" class="img-responsive img-circle margin" style="display:inline" alt="Nate" width="450" height="450">     
+    </div>
+  </section>
+<!-- Second Container -->
+  <section id="projects" class="projects-section">
+      <div class="container-fluid bg-4 text-center">    
+        <h1 class="margin">Projects</h1><br>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>NorseGlovesMW Website</h3>
+            <a href="NorseGlovesMW/index.html">
+            <img src="NorseGlovesMW/pics/norseglovesmw.png" class="img-responsive margin" style="width:100%" alt="NorseGlovesMW Logo"></a>
+          </div>
+          <div class="col-sm-4"> 
+            <h3>The BBQ Pit Website</h3>
+            <a href="BBQPit/index.html">
+            <img src="BBQPit/images/thebbqpit.jpg" class="img-responsive margin" style="width:100%" alt="The BBQ Pit"></a>
+          </div>
+          <div class="col-sm-4"> 
+            <h3>GenuineGloves Website</h3>
+            <img src="icons/coming-soon.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+          </div>
+        </div>
+        <div class="row">
+          </div>
+          <div class="col-sm-4"> 
+            <h3>StandUpGloves Website</h3>
+            <img src="icons/coming-soon.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Third Container (Grid) -->
+  <section id="about" class="about-section"> 
+    <div class="container-fluid bg-2 text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="margin">About</h1>
+            </div>
+        </div>
+          <ul class="timeline">
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="icons/vhs-tigers.jpg" alt="West Des Moines Valley High Schoool">
+                    <img class="top img-circle img-responsive" src="icons/vhs-tigers.jpg" alt="High School Baseball">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2008-2012</h4>
+                        <h4 class="subheading">High School</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>I attended Valley High School in West Des Moines, IA for four years, graduating in 2012. During my high school career, I was very involved in extra-cirricular activities, being a member of the Football team (2008-2010), Basketball Team (2008-2012), and the Baseball Team (2008-2012).</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="icons/norse_helmet.jpg" alt="Roster Photo 2013">
+                    <img class="top img-circle img-responsive" src="icons/norse_helmet.jpg" alt="Norse Helmet">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2012-2016</h4>
+                        <h4 class="subheading">College</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>After graduating High School I went on to attend Luther College in Decorah, IA. I played varsity baseball for the Luther Norse along with my studies. I finished my senior season of baseball while studying Computer Science.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="icons/kaplan.jpg" alt="Kaplan University">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2017-Current</h4>
+                        <h4 class="subheading">Kaplan University</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>After I finished playing four years of college baseball, I looked to finish my degree by attending Kaplan University in Des Moines, IA. I am currently taking classes in the Information Technology field and am expected to graduate in the Spring of 2018.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <h4><a id="resume_link" target="_blank" href="docs/Resume.pdf"> View
+                        <br>Resume </a></h4>
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <br>
+                        <h4> Resume </h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p> If you would like to see more specific credentials, please click on the link to a downloadable PDF version of my resume. </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </section>
+<!-- Fourth Container (Grid) -->
+  <section id="contact" class="contact-section">
+    <div class="container-fluid bg-4 text-center">
+      <h1 class="margin">Contact</h1>
+      <p>Please contact me at <a href="mailto:natewhitham@msn.com">natewhitham@msn.com</a> with any questions.</p>
+      <p><a href="https://www.facebook.com/nate.whitham.3"><img src="icons/facebook.svg" style="width: 40px"></a><a href="https://twitter.com/n_whitham"><img src="icons/twitter.svg" style="width: 40px" hspace="20px"></a><a href="https://www.linkedin.com/in/nate-whitham-5b63bb89/"><img src="icons/linkedin.svg" style="width: 40px"></a></p>
+    </div>   
+  </section>
+<!-- Footer -->
+<!-- <footer class="container-fluid bg-1 text-center">
+  <p>Footer Info</p> 
+</footer> -->
+  <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </body>
 </html>

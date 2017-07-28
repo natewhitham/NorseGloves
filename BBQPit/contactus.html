@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The BBQ Pit - Contact US</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		input:focus{
+			border: 2px solid #ff0000;
+			border-radius: 6px;
+			padding: 5px;
+		}
+		input{
+			background-color: #D3D3D3;
+			color: #3300ff;
+			font-family: sans-serif;
+		}
+		input[type=submit]{
+			color: #000;
+		}
+		input#id1{
+			background-color: #99ff00;
+			border-radius: 6px;
+			border: 2px solid #cc0099;
+		}
+		select#dropdown:hover{
+			background-color: #cc0000;
+		}
+		input[type=checkbox]:hover{
+			cursor: pointer;
+		}
+		input[type=reset],[type=reset]:hover{
+			cursor:pointer;
+			color: #3300ff;
+		}
+	</style>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<header>
+<img src="images/thebbqpit.jpg" alt="The BBQ Pit Logo" width="150" height="150">
+<h1>Contact The BBQ Pit</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="aboutus.html"> About </a></li>
+		<li><a href="history.html"> History </a></li>
+		<li><a href="menu.html"> Menu </a></li>
+		<li><a class="active" href="contactus.html"> Contact </a></li>
+		<li><a href="chef.html"> Pit Master </a></li>
+		<li><a href="gallery.html"> Gallery </a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Leave a Response</h2>
+	<form action="" method="post" autocomplete="on">
+	  First Name:<br>
+	  <input type="text" name="firstname"><br>
+	  <br>
+	  Last Name:<br>
+	  <input type="text" name="lastname" required><br>
+	  <br>
+	  Select Gender:<br>
+	  <input type="radio" name="gender" value="male"> Male <br>
+	  <input type="radio" name="gender" value="female"> Female<br>
+	  <input type="radio" name="gender" value="other"> Other<br>
+	  <br>
+	  Email Address:<br>
+	  <input type="email" name="emailaddress" autocomplete="off" required><br>
+	  <br>
+	  Phone Number:<br>
+	  <input type="tel" name="phonenumber"><br>
+	  <br>
+	  Favorite Option:
+	  <select id="dropdown" name="food">
+	  	<option>   </option>
+	  	<option value="brisket">Brisket</option>
+	  	<option value="ribs">Ribs</option>
+	  	<option value="ham">Smoked Ham</option>
+	  	<option value="chicken">Smoked Chicken</option>
+	  </select><br>
+	  <br>
+	  Payment Type:<br>
+	  <input type="checkbox" name="payment" value="Cash">I paid with Cash<br>
+	  <input type="checkbox" name="payment" value="CreditCard">I paid with a Credit Card<br>
+	  <input type="checkbox" name="payment" value="DebitCard">I paid with a Debit Card<br>
+	  <br>
+	  Comments:<br>
+	  <textarea name="comments" rows="4" cols="50" required></textarea>
+	  <br><br>
+	  <input type="submit" value="Submit">
+	  <input type="reset">
+	</form>
+
+	<h2>Enter your four-digit passcode, then click OK:</h2>
+
+	<input id="id1" type="number" min="1000" max="9999">
+	<button onclick="myFunction()">OK</button>
+
+	<p id="passcode"></p>
+
+	<script>
+		function myFunction() {
+			var inpObj = document.getElementById("id1");
+			if (inpObj.checkValidity() == false) {
+				document.getElementById("passcode").innerHTML = inpObj.validationMessage;
+			} else {
+				document.getElementById("passcode").innerHTML = "Passcode Valid";
+			}
+		}
+	</script>
+
+</main>
+
+<footer>
+	<p>
+		<a href="index.html"> Home </a> | <a href="aboutus.html"> About </a> | <a href="history.html"> History </a> | <a href="menu.html"> Menu </a> | <a href="contactus.html"> Contact </a> | <a href="chef.html"> Pit Master </a> | <a href="gallery.html"> Gallery </a>
+	</p>
+</footer>
+
+</body>
+</html>

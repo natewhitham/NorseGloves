@@ -9,6 +9,9 @@ p {
 li {
   font-size: 16px;
 }
+.name {
+  font-size: 86px;
+}
 .margin {
   margin-bottom: 45px;
 }
@@ -43,6 +46,10 @@ li {
 }
 .navbar-nav  li a:hover {
     color: #2f2f2f !important;
+}
+
+.col-md-6 {
+    text-align: center;
 }
 
 .timeline {

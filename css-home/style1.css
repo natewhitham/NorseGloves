@@ -195,9 +195,15 @@ li {
 .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
+
 #resume_link {
     color: rgb(216, 216, 216);
 }
+
+#code_Link{
+    color: white;
+}
+
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
